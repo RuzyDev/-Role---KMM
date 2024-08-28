@@ -1,5 +1,6 @@
 package com.ruzy.maisrole.di
 
+import com.ruzy.maisrole.domain.observers.ObserveAnimes
 import com.ruzy.maisrole.domain.repository.MaisRoleRepository
 import com.ruzy.maisrole.domain.repository.impl.MaisRoleRepositoryImpl
 import com.ruzy.maisrole.network.datasource.MaisRoleDataSource
@@ -23,5 +24,8 @@ val coreModule = module {
     single { MaisRoleDataStore(get()) }
 
     single { MaisRoleDataSource(get()) }
-    single { MaisRoleRepositoryImpl(get()) }
+    single { MaisRoleRepositoryImpl(get(), get()) }
+
+    //Domains
+    factory { ObserveAnimes(get()) }
 }

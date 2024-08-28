@@ -10,11 +10,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.ruzy.maisrole.Greeting
 import com.ruzy.maisrole.android.theme.MyApplicationTheme
+import com.ruzy.maisrole.presentation.HomeViewModel
+import org.koin.androidx.compose.koinViewModel
+import org.koin.compose.koinInject
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
+            val viewModel = HomeViewModel()
+
             MyApplicationTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),

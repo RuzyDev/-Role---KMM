@@ -58,6 +58,7 @@ mock-common = { module = "io.mockk:mockk-common", version.ref = "mockkCommon" }
 sqldelight-driver-common = { module = "app.cash.sqldelight:runtime", version.ref = "sqlDelight" }
 sqldelight-driver-android = { module = "app.cash.sqldelight:android-driver", version.ref = "sqlDelight" }
 sqldelight-driver-ios = { module = "app.cash.sqldelight:native-driver", version.ref = "sqlDelight" }
+sqldelight-coroutines-extensions = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqlDelight" }
 
 #Serialization Dependencies
 serialization-kotlin = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }

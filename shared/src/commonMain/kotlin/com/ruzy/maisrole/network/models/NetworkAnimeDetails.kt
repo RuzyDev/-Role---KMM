@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
 
 
 @Serializable
-data class AnimeDetails (
+data class NetworkAnimeDetails (
   @SerialName("anime"     ) val anime     : String? = null,
   @SerialName("character" ) val character : String? = null,
   @SerialName("content"   ) val content   : String? = null

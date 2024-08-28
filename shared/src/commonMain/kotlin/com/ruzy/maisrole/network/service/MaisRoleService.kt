@@ -1,8 +1,7 @@
 package com.ruzy.maisrole.network.service
 
-import com.ruzy.maisrole.network.models.AnimeDetails
-import com.ruzy.maisrole.util.ResultState
+import com.ruzy.maisrole.network.models.NetworkAnimeDetails
 
 interface MaisRoleService {
-   suspend fun getRandomAnime(): AnimeDetails
+   suspend fun getRandomAnime(): NetworkAnimeDetails
 }

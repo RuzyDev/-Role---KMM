@@ -1,0 +1,16 @@
+CREATE TABLE animeEntity (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    anime TEXT,
+    character TEXT,
+    content TEXT
+);
+
+insertOrUpdate:
+INSERT OR REPLACE INTO animeEntity (anime, character, content)
+VALUES (?, ?, ?);
+
+getById:
+SELECT * FROM animeEntity WHERE id = ?;
+
+selectAll:
+SELECT * FROM animeEntity;

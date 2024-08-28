@@ -30,6 +30,7 @@ kotlin {
             implementation(libs.courotines.core)
             implementation(libs.datetime)
             implementation(libs.sqldelight.driver.common)
+            implementation(libs.sqldelight.coroutines.extensions)
             implementation(libs.serialization.kotlin.core)
 
             implementation(libs.koin.core)
