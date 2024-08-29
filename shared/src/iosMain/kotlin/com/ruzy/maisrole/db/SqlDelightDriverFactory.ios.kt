@@ -6,6 +6,6 @@ import com.ruzy.maisrole.database.MaisRoleDatabase
 
 actual class SqlDelightDriverFactory {
     actual fun createDriver(): SqlDriver {
-        return NativeSqliteDriver(MaisRoleDatabase.Schema, "promocoes.db")
+        return NativeSqliteDriver(MaisRoleDatabase.Schema, "maisrole.db")
     }
 }
