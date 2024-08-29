@@ -6,7 +6,7 @@ kotlinx-datetime = "0.6.1"
 compose = "1.6.8"
 compose-material3 = "1.2.1"
 androidx-activityCompose = "1.9.1"
-lifecycle-viewmodel = "2.8.4"
+lifecycle-compose = "2.8.4"
 junit = "4.13.2"
 instrumented-test-compose = "1.7.0-beta07"
 ext-junit = "1.2.1"
@@ -31,7 +31,8 @@ compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = 
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
-lifecycle-viewmodel = {module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle-viewmodel"}
+lifecycle-viewmodel = {module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle-compose"}
+lifecycle-runtime-compose = {module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle-compose"}
 courotines-core = {module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx"}
 datetime = {module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime"}
 korio = { module = "com.soywiz.korlibs.korio:korio", version.ref = "korio" }

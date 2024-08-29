@@ -16,17 +16,3 @@ actual abstract class CoroutineViewModel : ViewModel(){
         super.onCleared()
     }
 }
-
-//actual abstract class CoroutineViewModel : ViewModel() {
-//
-//    actual val coroutineScope = viewModelScope
-//
-//    actual fun dispose() {
-//        coroutineScope.cancel()
-//        onCleared()
-//    }
-//
-//    actual override fun onCleared() {
-//        super.onCleared()
-//    }
-//}

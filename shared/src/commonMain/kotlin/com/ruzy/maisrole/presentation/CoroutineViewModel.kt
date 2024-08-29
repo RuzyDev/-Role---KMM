@@ -1,4 +1,4 @@
-package com.ruzy.maisrole.presentation.util
+package com.ruzy.maisrole.presentation
 
 import kotlinx.coroutines.CoroutineScope
 

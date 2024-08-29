@@ -150,22 +150,5 @@ class KtorHttpClient(
                 }
             )
         }
-
     }
-}
-
-
-private fun getPassword(): String {
-    var senha: Long
-    val lAno: Long
-    val sSenha: String
-
-    // Calcula Senha do dia
-    val dateStr = "26/08/2024"
-    lAno = dateStr.substring(6, 10).toLong()
-    sSenha = dateStr.replace("/", "")
-    senha = sSenha.toLong()
-    senha = senha xor lAno
-    senha = senha shr 1
-    return senha.toString()
 }

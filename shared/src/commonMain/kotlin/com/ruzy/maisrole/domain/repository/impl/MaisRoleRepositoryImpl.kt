@@ -8,6 +8,7 @@ import com.ruzy.maisrole.domain.repository.MaisRoleRepository
 import com.ruzy.maisrole.model.AnimeDetails
 import com.ruzy.maisrole.model.asExternalModel
 import com.ruzy.maisrole.network.datasource.MaisRoleDataSource
+import com.ruzy.maisrole.network.service.MaisRoleService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO
 import kotlinx.coroutines.flow.Flow
@@ -15,7 +16,7 @@ import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.map
 
 class MaisRoleRepositoryImpl(
-    private val maisRoleDataSource: MaisRoleDataSource,
+    private val maisRoleDataSource: MaisRoleService,
     private val animeQueries: AnimeQueries
 ) : MaisRoleRepository {
     override suspend fun insertRandomAnime() {
